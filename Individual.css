@@ -10,11 +10,11 @@ a{
 }
 @font-face {
   font-family: 'iconfont';  /* project id："169671" */
-  src: url('http://at.alicdn.com/t/font_zxz26bg967d2huxr.eot');
-  src: url('http://at.alicdn.com/t/font_zxz26bg967d2huxr.eot') format('embedded-opentype'),
-  url('http://at.alicdn.com/t/font_zxz26bg967d2huxr.woff') format('woff'),
-  url('http://at.alicdn.com/t/font_zxz26bg967d2huxr.ttf') format('truetype'),
-  url('http://at.alicdn.com/t/font_zxz26bg967d2huxr.svg#iconfont') format('svg');
+  src: url('https://at.alicdn.com/t/font_zxz26bg967d2huxr.eot');
+  src: url('https://at.alicdn.com/t/font_zxz26bg967d2huxr.eot') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_zxz26bg967d2huxr.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_zxz26bg967d2huxr.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_zxz26bg967d2huxr.svg#iconfont') format('svg');
 }
 /*头部开始*/
 .head{
@@ -239,9 +239,11 @@ a{
 	.study-intro{
 		width: 90%;
 		height: 100%;
-		/*float: left;*/
+		
 		padding-top: 50px;
+		margin-left: 20px;
 		box-sizing: border-box;	
+		margin-bottom: 30px;
 	}
 }
 @media screen and (max-width:768px){
