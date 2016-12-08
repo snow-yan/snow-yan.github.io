@@ -18,13 +18,14 @@ a{
 }
 /*头部开始*/
 .head{
-	height:560px;
+	height:450px;
 	width: 100%;
 	background-image: url(images/banner.jpg);
 	background-size:cover;
 	background-repeat: no-repeat;
 	position: relative;
 	padding-top: 340px;
+	box-sizing:content-box!important;
 }
 @keyframes title{
 	from{
@@ -32,12 +33,12 @@ a{
 		opacity: 0;
 	}
 	to{
-		top: 350px;
+		top: 320px;
 		opacity: 1;
 	}
 }
 .title{	
-	width: 50%;
+	/*width: 50%;*/
 	height: auto;
 	margin:0 auto;
 	color: #F7C80C;
@@ -59,7 +60,7 @@ a{
 		opacity: 0;
 	}
 	to{
-		top: 450px;
+		top: 420px;
 		opacity: 1;
 	}
 }
@@ -84,7 +85,7 @@ a{
 		opacity: 0;
 	}
 	to{
-		top: 700px;
+		top: 600px;
 		opacity: 1;
 	}
 }
@@ -165,6 +166,7 @@ a{
 	float: left;
 	padding-top: 130px;
 	box-sizing: border-box;	
+	/*margin-left: 100%;*/
 }
 .study-intro h3{
 	width: 100%;
@@ -182,10 +184,10 @@ a{
 	height: auto;	
 	margin-top: 20px;
 	overflow: hidden;
+	
 }
 @keyframes move{
 	from{
-		/*margin-top: 100px;*/
 		opacity: 0;		
 	}
 	to{
@@ -233,11 +235,9 @@ a{
 		width: 400px;
 		transform: rotate(0deg);
 		border: 8px solid #fff;
-		box-shadow: 5px 5px 15px #B5B9BA;
-		/*position:absolute;*/
+		box-shadow: 5px 5px 15px #B5B9BA;	
 		margin-top: 35px;
-		margin-left: 20px;
-		/*z-index: 101;*/
+		margin-left: 20px;	
 	}
 	.study-intro{
 		width: 90%;
@@ -403,25 +403,21 @@ a{
 	border-radius: 5px;
 	height: 100%;
 	width: 70%;
-	background: #DEECDF;
 }
 .studyskills1 ul li{
 	height: 20px;
 	width: 80%;
 	border-radius: 5px;
-	background: #ACB5B8;
 }
 .studyskills2 ul li{
 	height: 20px;
 	width: 60%;
 	border-radius: 5px;
-	background: #78B3AE;
 }
 .studyskills3 ul li{
 	height: 20px;
 	width: 70%;
 	border-radius: 5px;
-	background: #8C9D82;
 }
 /*design开始*/
 .design{
@@ -623,10 +619,12 @@ a{
 	float: left;
 	width: 25%;
 	height: 200px;
-	/*border:1px solid #000;*/
 	box-sizing: border-box;
 	padding-right: 20px;
-	/*overflow: hidden;*/
+	transition:all .6s ease;
+}
+.work2 li:hover{
+transform:scale(1.1,1.1);
 }
 .work2 li:nth-child(1){	
 	background: url(images/1.jpg);
@@ -673,56 +671,55 @@ a{
 	width: 100%;	
 			
 }
-@keyframes aaa{
-	from{
-		/*line-height: 0;*/
-		opacity: 0;
-	}
-	to{
-		/*line-height: 241px;*/
-		opacity: 1;
-	}
+.wangye1 li{
+	overflow: hidden;
+}
+.wangye1 li div{
+	background-size:cover;
+		position: relative;
+		background-repeat:no-repeat;
 }
 @media screen and (min-width:1200px) {
 	.wangye1 li{
-		width: 22%;	
-		height: 230px;
+		width: 23%;	
+		height: 180px;
 		float: left;	
-		transition: all .3s linear;
-		background: url(images/1.png);
-		background-size:cover;
-		position: relative;
-		background-repeat:no-repeat;
-		margin-left: 3%;	
+		transition: all .3s linear;				
+		margin-left: 2%;	
 		margin-bottom: 30px;
 		box-shadow: 0 5px 18px #ccc;
 	}
+	.wangye li div{
+		width: 100%;
+		height: 100%;
+		transition: all .3s linear;	
+		background-image: url(images/1.png);		
+	}
 	.wangye1 li div a{	
-		color: #fff;
-		font-size: 20px;	
-		line-height: 230px;
-		opacity: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
 	}
 }
 @media screen and (min-width:992px ) and (max-width:1200px){
 	.wangye1 li{
 		width: 22%;	
 		height: 230px;
-		float: left;	
-		transition: all .3s linear;
-		background: url(images/1.png);
-		background-size:cover;
-		position: relative;
-		background-repeat:no-repeat;
+		float: left;		
 		margin-left: 3%;	
 		margin-bottom: 30px;
 		box-shadow: 0 5px 18px #ccc;
 	}
+	.wangye li div{
+		width: 100%;
+		height: 100%;
+		transition: all .3s linear;				
+		background-image: url(images/1.png);		
+	}
 	.wangye1 li div a{	
-		color: #fff;
-		font-size: 20px;	
-		line-height: 230px;
-		opacity: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
 	}
 }
 @media screen and (min-width:768px ) and (max-width:992px){
@@ -730,8 +727,7 @@ a{
 		width: 47%;	
 		height: 200px;
 		float: left;	
-		transition: all .3s linear;
-		background: url(images/1.png);
+		transition: all .3s linear;		
 		background-size:cover;
 		position: relative;
 		background-repeat:no-repeat;
@@ -739,22 +735,18 @@ a{
 		margin-bottom: 30px;
 		box-shadow: 0 5px 18px #ccc;
 	}
+	.wangye li div{
+		width: 100%;
+		height: 100%;
+		transition: all .3s linear;	
+		background-image: url(images/011.jpg);	
+	}
 	.wangye1 li div a{	
-		color: #fff;
-		font-size: 20px;	
-		line-height: 200px;
-		opacity: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
 	}
-	@keyframes aaa{
-		from{
-			/*line-height: 0;*/
-			opacity: 0;
-		}
-		to{
-			/*line-height: 200px;*/
-			opacity: 1;
-		}
-	}
+	
 	
 }
 @media screen and (max-width:768px) {
@@ -763,73 +755,77 @@ a{
 		height: 260px;
 		float: left;	
 		transition: all .3s linear;
-		background: url(images/1.png);
 		background-size:cover;
 		position: relative;
 		background-repeat:no-repeat;	
 		margin-bottom: 30px;
 		box-shadow: 0 5px 18px #ccc;
 	}
-}
-@keyframes new{
-	from{
-		transform: scale(0,0) rotate(0deg);	
-		opacity: 0;	
+	.wangye li div{
+		width: 100%;
+		height: 100%;
+		background-image: url(images/011.jpg);
+		transition: all .3s linear;
 	}
-	to{		
-		transform: scale(1,1) rotate(720deg);	
-		opacity: 1;		
+	.wangye1 li div a{	
+		display: block;
+		width: 100%;
+		height: 100%;
 	}
 }
-.wangye1 li:hover div{
-	animation: new .5s ease forwards;
-}
-.wangye1 li:nth-child(1){	
+
+.wangye1 li:nth-child(1) div{	
+	background-image: url(images/1.png);
 		
 	
 }
-.wangye1 li:nth-child(2){
+.wangye1 li:nth-child(2) div{
 	background-image: url(images/2.png);
 	
 	
 }
-.wangye1 li:nth-child(3){
+.wangye1 li:nth-child(3) div{
 	background-image: url(images/3.png);	
 }
-.wangye1 li:nth-child(4){
+.wangye1 li:nth-child(4) div{
 	background-image: url(images/4.png);		
 }
-.wangye1 li:nth-child(5){
+.wangye1 li:nth-child(5) div{
 	background-image: url(images/7.png);	
 }
-.wangye1 li:nth-child(6){
+.wangye1 li:nth-child(6) div{
 	background-image: url(images/5.png);	
 }
-.wangye1 li:nth-child(7){
+.wangye1 li:nth-child(7) div{
 	background-image: url(images/6.png);	
 }
-.wangye1 li:nth-child(8){
+.wangye1 li:nth-child(8) div{
 	background-image: url(images/8.png);	
 }
-.wangye1 li:hover{
-	transform: scale(1.05);
+.wangye1 li:hover div{
+	transform:translateY(-30px);
 }
-.wangye1 li div{
+.wangye li ul{
 	width: 100%;
-	height: 100%;
-	text-align: center;	
-	background:rgba(211,39,39,0.98);
-	opacity: 0;	
-	position: relative;
+	height: 30px;
+	background:#FF9C03;
+		transition: all .3s linear;
+
+}
+
+.wangye1 li:hover ul{
+	transform:translateY(-100%);	
+}
+.wangye1 li ul li{
+	color: #fff;
+	width:100%;
 	text-align: center;
-	
+	line-height: 30px;
+	background-color:transparent;
+	box-shadow: none;
 }
 
 
-.wangye1 li div:hover a{
-	animation: aaa .6s ease forwards .3s;
-	
-}
 /*footer*/
 .foot{
 	width: 100%;

@@ -11,7 +11,7 @@ $(document).ready(function(){
 	})
 	var project=$(".study1").position().top;
 	$(".nav2").on('click',function(){
-		$('body,html').animate({scrollTop:project+90},600);	
+		$('body,html').animate({scrollTop:project},600);	
 	})
 	
 	var proj=$(".wangye").position().top;
